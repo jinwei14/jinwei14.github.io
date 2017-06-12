@@ -57,9 +57,9 @@
             <!--unorder list-->
             <ul class="nav navbar-nav">
                 <!--list items-->
-                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li ><a href="cv.html"> CV </a></li>
-                <li ><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
 
                 <!--drop down menu-->
                 <li class="dropdown">
@@ -84,96 +84,64 @@
 </nav>
 
 
+<!--contact form-->
+    <div id="emailme" class="contact">
+        <div class="container">
+            <h3 class="tittle">Contact</h3>
+            <div class="col-md-6 contact-left ">
+                <div class="horizontal-tab">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+                        <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active in" id="tab1">
+                            <div class="contact-form">
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>St Andrews Gardens, 21 Moor Place <span>Liverpool, UK.</span></li>
+                                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="janviezhang14@gmail.com">janviezhang14@gmail.com</a></li>
+                                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+44 7749337092</li>
+                                </ul>
+                                <form>
+                                    <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                                    <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                                    <input type="submit" value="Submit" >
+                                </form>
+                            </div>
 
-<!-- Page Content -->
-<div class="container">
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <div class="contact-form">
+                                <form>
+                                    <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                                    <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
+                                    <input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+                                    <div class="fileUpload btn btn-primary">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" />
+                                    </div>
+                                    <input type="submit" value="Send Request" >
+                                </form>
+                                <script>
+                                    document.getElementById("uploadBtn").onchange = function () {
+                                        document.getElementById("uploadFile").value = this.value;
+                                    };
+                                </script>
+                            </div>
+                        </div>
 
-    <h3>
-        ABc!!
-    </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 contact-right ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9514.48455229688!2d-2.9641206!3d53.4037168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b213d5160d9d7%3A0xea9426201bc1e352!2sSt+Andrew&#39;s+Gardens%2C+21+Moor+Pl%2C+Liverpool+L3+5XA!5e0!3m2!1sen!2suk!4v1497264760513" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-    <h3>
-        ABc!!
-    </h3>
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-    <h3>
-        ABc!!
-    </h3>
-
-
-</div>
 
 <!--the whole footer content-->
 <footer class="footer-distributed">
